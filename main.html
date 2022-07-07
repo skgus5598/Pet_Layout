@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {margin: 0;}
+    .wrap {	margin: auto;}
+    .header { display: flex; padding-top: 30px;	 background-color: red;}
+
+     img{
+        width: 150px;
+        height: 180px;
+    }
+    .divH1{
+        width: 40%;
+        display: flex;
+        background-color: chartreuse;
+    }
+    .divH2{
+        width: 60%;
+        background-color: aqua;
+    }
+    .divH2 input{
+        width: 60%;
+    }
+
+    .navMain ul {	display: flex;	justify-content: center; background-color: yellow;}
+    .navMain li {
+        list-style: none;
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+    .navMain ul li a {	text-decoration: none; font-size: x-large;	color: rgba(70, 5, 155, 0.9);}
+    .navMain ul li a:hover {
+        color: purple;
+        border-bottom: 1px double purple;
+        transition: all 0.25s;
+    }	
+    .left-bar{
+        padding-top:20px;
+        font-size: 30px;
+        width:30%;
+        background-color: gray;
+    }
+    .truname{
+        background-color: aqua;
+    }
+    </style>
+    </head>
+    <body>
+    <div class="wrap">
+        <div class="header">
+                <div class="divH1">
+                    <div><img src="https://i.pinimg.com/736x/34/5c/df/345cdf0b5c4b2e6324f731b7b161698b.jpg"></div>
+                    <div id="headerFont">TRUDY</div>
+                </div>
+                <div class="divH2">
+                    <input type="text">검색                    
+                </div>
+        </div>
+        <div>
+             <nav class="navMain">
+                  <ul>
+                      <li><a href="#">BOARD</a></li>
+                      <li><a href="#">BOARD</a></li>
+                      <li><a href="#">BOARD</a></li>
+                      <li><a href="#">BOARD</a></li>    
+                     <li><a href="#">BOARD</a></li>
+                  </ul>
+              </nav>
+          </div>
+
+          <!--left bar-->
+          <div class="left-bar">
+            <div><button>펼치기</button></div>
+            <!--여기 for문 -->
+            <div style="display:flex">
+                <div><img src="https://i.pinimg.com/736x/34/5c/df/345cdf0b5c4b2e6324f731b7b161698b.jpg"></div>
+                <div>
+                    <label>TRUDY!</label>
+                    <label>TRUDY!</label>
+                    <label class="truname">TRUDY!</label>
+                </div>      
+            </div>
+            <div style="display:flex">
+                <div><img src="https://i.pinimg.com/736x/34/5c/df/345cdf0b5c4b2e6324f731b7b161698b.jpg"></div>
+                <div>
+                    <label>TRUDY!</label>
+                    <label>TRUDY!</label>
+                    <label class="truname">TRUDY!</label>
+                </div>      
+            </div>
+          </div>
+
+</div>
+</body>
+</html>
