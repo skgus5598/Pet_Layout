@@ -26,7 +26,12 @@
         height: 100px;
     }
     .story-contents{
+        justify-content: center;
+        text-align: center;
+        background-color: aquamarine;
         display: flex;
+        flex-wrap: wrap; /*행을 다 채우면 다음 행으로 개행*/
+        width: 100%;
     }
     .story-contents img{
         width: 200px;
@@ -98,7 +103,7 @@
                         });
                     
                     </script>
-                    <div class="layout-main" style="background-color: yellow; width:75%" >
+                    <div class="layout-main" style="background-color: yellow; width:75%;" >
                         <div id="primary" class="content-area column full">
                             <main id="main" class="site-main">
                                 <div id="main-title">
@@ -122,6 +127,7 @@
                                     </div>
                                 </div>
                                 <br><br>
+<!-- 반복문 돌리기? 3줄씩 끊어서-->
 
                                 <div class="story-contents">
                                     <div class="sContents">
@@ -129,41 +135,55 @@
                                         <img src="https://i.pinimg.com/736x/34/5c/df/345cdf0b5c4b2e6324f731b7b161698b.jpg"><br>
                                         <label>❤️ 24     ♥sunshimi ♥hodor </label> 
                                         </a>
-                                    </div> 
-                                    <div class="sContents">
-                                        <br>
-                                        <a href="#">
-                                        <img src="https://i.pinimg.com/736x/34/5c/df/345cdf0b5c4b2e6324f731b7b161698b.jpg"><br>
-                                        <label>❤️ 24     ♥sunshimi ♥hodor </label> 
-                                        </a>
-                                    </div> 
-                                    <div class="sContents">
                                         <br><br>
+                                    </div> 
+                                    <div class="sContents">
                                         <a href="#">
                                         <img src="https://i.pinimg.com/736x/34/5c/df/345cdf0b5c4b2e6324f731b7b161698b.jpg"><br>
                                         <label>❤️ 24     ♥sunshimi ♥hodor </label> 
                                         </a>
+                                        <br><br>
                                     </div> 
-                                     
+                                    <div class="sContents">
+                                        <a href="#">
+                                        <img src="https://i.pinimg.com/736x/34/5c/df/345cdf0b5c4b2e6324f731b7b161698b.jpg"><br>
+                                        <label>❤️ 24     ♥sunshimi ♥hodor </label> 
+                                        </a>
+                                        <br><br>
+                                    </div>  
+                                    <div class="sContents">
+                                        <a href="#">
+                                        <img src="https://i.pinimg.com/736x/34/5c/df/345cdf0b5c4b2e6324f731b7b161698b.jpg"><br>
+                                        <label>❤️ 24     ♥sunshimi ♥hodor </label> 
+                                        </a>
+                                        <br><br>
+                                    </div>  
+                                    <div class="sContents">
+                                        <a href="#">
+                                        <img src="https://i.pinimg.com/736x/34/5c/df/345cdf0b5c4b2e6324f731b7b161698b.jpg"><br>
+                                        <label>❤️ 24     ♥sunshimi ♥hodor </label> 
+                                        </a>
+                                        <br><br>
+                                    </div>  
+                                    <div class="sContents">
+                                        <a href="#">
+                                        <img src="https://i.pinimg.com/736x/34/5c/df/345cdf0b5c4b2e6324f731b7b161698b.jpg"><br>
+                                        <label>❤️ 24     ♥sunshimi ♥hodor </label> 
+                                        </a>
+                                        <br><br>
+                                    </div>  
                                 </div>
 
 
 
-
-
-
-
-
-
-
-                            <!-- .grid -->
-                            <nav class="pagination">
-                            <span class="page-numbers current">1</span>
-                            <a class="page-numbers" href="#">2</a>
-                            <a class="next page-numbers" href="#">Next »</a>
-                            </nav>
-                            <br/>
                             </main>
+                                  <!-- .grid -->
+                                  <nav class="pagination">
+                                    <span class="page-numbers current">1</span>
+                                    <a class="page-numbers" href="#">2</a>
+                                    <a class="next page-numbers" href="#">Next »</a>
+                                    </nav>
+                                    <br/>
                         </div>
                     </div>
                         <!-- #main -->
