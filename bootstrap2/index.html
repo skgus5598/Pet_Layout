@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Moschino | Minimalist Free HTML Portfolio by WowThemes.net</title>
+<!--jquery-->
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
 <link rel='stylesheet' href='css/woocommerce-layout.css' type='text/css' media='all'/>
 <link rel='stylesheet' href='css/woocommerce-smallscreen.css' type='text/css' media='only screen and (max-width: 768px)'/>
 <link rel='stylesheet' href='css/woocommerce.css' type='text/css' media='all'/>
@@ -12,15 +15,32 @@
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:400,500,700%7CRoboto:400,500,700%7CHerr+Von+Muellerhoff:400,500,700%7CQuattrocento+Sans:400,500,700' type='text/css' media='all'/>
 <link rel='stylesheet' href='css/easy-responsive-shortcodes.css' type='text/css' media='all'/>
 </head>
+
+<style>
+.searchDiv{
+	background-color: orange;
+	width: 80%;
+	padding-top: 50px;
+}
+
+</style>
+
 <body class="home page page-template page-template-template-portfolio page-template-template-portfolio-php">
-<div id="page">
-	<div class="container">
+<div id="page" >
+	<div class="container" >
 		<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<h1 class="site-title"><a href="index.html" rel="home">Moschino</a></h1>
-			<h2 class="site-description">Minimalist Portfolio HTML Template</h2>
+		<div class="site-branding" style="display: flex;">	
+			<div>
+				<h1 class="site-title"><a href="index.html" rel="home">Trudy</a></h1>
+				<h2 class="site-description">Minimalist Portfolio HTML Template</h2>
+			</div>
+			<div class="searchDiv">
+				<input type="text">
+				<button>search</button>
+			</div>
+			
 		</div>
-		<nav id="site-navigation" class="main-navigation">
+		<nav id="site-navigation" class="main-navigation" style="background-color: green;">
 		<button class="menu-toggle">Menu</button>
 		<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 		<div class="menu-menu-1-container">
@@ -44,95 +64,107 @@
 		</nav>
 		</header>
 		<!-- #masthead -->
-		<div id="content" class="site-content">
-			<div id="primary" class="content-area column full">
-				<main id="main" class="site-main">
-				<div class="grid portfoliogrid">
-				
-					<article class="hentry">
-					<header class="entry-header">
-					<div class="entry-thumbnail">
-						<a href="portfolio-item.html"><img src="http://s3.amazonaws.com/caymandemo/wp-content/uploads/sites/15/2015/09/30162427/p1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="p1"/></a>
+		<div id="content" class="site-content" style="background-color: blueviolet; display: flex;">
+<!--layoout Left-->				
+			<div class="layout-left" style="background-color: aqua; width: 15%;">
+				<li class="menubar">MENUBAR</li>
+					<ul class="test">
+						<li>testest</li>
+						<li>testest</li>
+						<li>testest</li>
+					</ul>
+			</div>	
+			<!--추후 사이드 슬라이드로 만들기 -->		
+			<script>
+				$(".menubar").click(function(){
+					if($(".test").is(":visible")){
+						$(".test").slideUp();
+					}else{
+						$(".test").slideDown();
+					}
+				});
+			
+			</script>
+			<div class="layout-main" style="background-color: yellow; width:75%" >
+				<div id="primary" class="content-area column full">
+					<main id="main" class="site-main">
+	<!--아래 div를 돌리면 밑으로-->
+					<div class="grid portfoliogrid" style="background-color: burlywood; padding-left: 100px; ">				
+						<article class="hentry">
+						<header class="entry-header">
+						<div class="entry-thumbnail" >
+							<a href="portfolio-item.html">
+								<img src="https://i.pinimg.com/736x/34/5c/df/345cdf0b5c4b2e6324f731b7b161698b.jpg">						
+						</header>
+						</article>
+						<article class="hentry" >
+							<header class="entry-header">
+							<div class="entry-thumbnail" >
+								<h2 class="entry-title"><a href="portfolio-item.html" rel="bookmark">@sunshimMom</a></h2>
+								<a class='portfoliotype' href='#'>sunshimi</a>
+								<a class='portfoliotype' href='portfolio-category.html'>Golden Retriever </a>						
+								<textarea readonly >textareaaaa</textarea><br><br>
+								<input type="text" placeholder="Add Comment ..">
+							</header>
+						</article>
 					</div>
-					<h2 class="entry-title"><a href="portfolio-item.html" rel="bookmark">Sunset Beach</a></h2>
-					<a class='portfoliotype' href='portfolio-category.html'>summer</a>
-					<a class='portfoliotype' href='portfolio-category.html'>woman</a>
-					<a class='portfoliotype' href='portfolio-category.html'>yellow</a>
-					</header>
-					</article>
 					
-					<article class="hentry">
-					<header class="entry-header">
-					<div class="entry-thumbnail">
-						<a href="portfolio-item.html"><img src="http://s3.amazonaws.com/caymandemo/wp-content/uploads/sites/15/2015/09/30160348/p5.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="p1"/></a>
+					<div class="grid portfoliogrid" style="background-color: burlywood; padding-left: 100px; ">				
+						<article class="hentry">
+						<header class="entry-header">
+						<div class="entry-thumbnail">
+							<a href="portfolio-item.html"><img src="https://i.pinimg.com/736x/34/5c/df/345cdf0b5c4b2e6324f731b7b161698b.jpg">						
+						</header>
+						</article>
+						<article class="hentry" >
+							<header class="entry-header">
+							<div class="entry-thumbnail">
+								<h2 class="entry-title"><a href="portfolio-item.html" rel="bookmark">@sunshimMom</a></h2>
+								<a class='portfoliotype' href='#'>sunshimi</a>
+								<a class='portfoliotype' href='portfolio-category.html'>Golden Retriever </a>						
+								<textarea readonly >textareaaaa</textarea><br><br>
+								<input type="text" placeholder="Add Comment ..">
+							</header>
+						</article>
 					</div>
-					<h2 class="entry-title"><a href="portfolio-item.html" rel="bookmark">Earl of Moreland</a></h2>
-					<a class='portfoliotype' href='portfolio-category.html'>hat</a>
-					<a class='portfoliotype' href='portfolio-category.html'>woman</a>
-					<a class='portfoliotype' href='portfolio-category.html'>yellow</a>
-					</header>
-					</article>
-					
-					<article class="hentry">
-					<header class="entry-header">
-					<div class="entry-thumbnail">
-						<a href="portfolio-item.html"><img src="http://s3.amazonaws.com/caymandemo/wp-content/uploads/sites/15/2015/09/30160151/p3.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="p1"/></a>
+
+					<div class="grid portfoliogrid" style="background-color: burlywood; padding-left: 100px; ">				
+						<article class="hentry">
+						<header class="entry-header">
+						<div class="entry-thumbnail">
+							<a href="portfolio-item.html"><img src="https://i.pinimg.com/736x/34/5c/df/345cdf0b5c4b2e6324f731b7b161698b.jpg">						
+						</header>
+						</article>
+						<article class="hentry" >
+							<header class="entry-header">
+							<div class="entry-thumbnail">
+								<h2 class="entry-title"><a href="portfolio-item.html" rel="bookmark">@sunshimMom</a></h2>
+								<a class='portfoliotype' href='#'>sunshimi</a>
+								<a class='portfoliotype' href='portfolio-category.html'>Golden Retriever </a>						
+								<textarea readonly >textareaaaa</textarea><br><br>
+								<input type="text" placeholder="Add Comment ..">
+							</header>
+						</article>
 					</div>
-					<h2 class="entry-title"><a href="portfolio-item.html" rel="bookmark">Eliza and John</a></h2>
-					<a class='portfoliotype' href='portfolio-category.html'>summer</a>
-					<a class='portfoliotype' href='portfolio-category.html'>woman</a>
-					<a class='portfoliotype' href='portfolio-category.html'>yellow</a>
-					</header>
-					</article>
 					
-					<article class="hentry">
-					<header class="entry-header">
-					<div class="entry-thumbnail">
-						<a href="portfolio-item.html"><img src="http://s3.amazonaws.com/caymandemo/wp-content/uploads/sites/15/2015/09/18160911/p6.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="p1"/></a>
-					</div>
-					<h2 class="entry-title"><a href="portfolio-item.html" rel="bookmark">Hot Afternoon</a></h2>
-					<a class='portfoliotype' href='portfolio-category.html'>pink</a>
-					<a class='portfoliotype' href='portfolio-category.html'>woman</a>
-					<a class='portfoliotype' href='portfolio-category.html'>yellow</a>
-					</header>
-					</article>
+					<!-- .grid -->
 					
-					<article class="hentry">
-					<header class="entry-header">
-					<div class="entry-thumbnail">
-						<a href="portfolio-item.html"><img src="http://s3.amazonaws.com/caymandemo/wp-content/uploads/sites/15/2015/09/15223245/p2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="p1"/></a>
-					</div>
-					<h2 class="entry-title"><a href="portfolio-item.html" rel="bookmark">Long Walks</a></h2>
-					<a class='portfoliotype' href='portfolio-category.html'>hat</a>
-					<a class='portfoliotype' href='portfolio-category.html'>summer</a>
-					<a class='portfoliotype' href='portfolio-category.html'>yellow</a>
-					</header>
-					</article>
-					
-					<article class="hentry">
-					<header class="entry-header">
-					<div class="entry-thumbnail">
-						<a href="portfolio-item.html"><img src="http://s3.amazonaws.com/caymandemo/wp-content/uploads/sites/15/2015/09/15222855/p7.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="p1"/></a>
-					</div>
-					<h2 class="entry-title"><a href="portfolio-item.html" rel="bookmark">Twilight</a></h2>
-					<a class='portfoliotype' href='portfolio-category.html'>hat</a>
-					<a class='portfoliotype' href='portfolio-category.html'>woman</a>
-					<a class='portfoliotype' href='portfolio-category.html'>summer</a>
-					</header>
-					</article>
-					
+					<nav class="pagination">
+					<span class="page-numbers current">1</span>
+					<a class="page-numbers" href="#">2</a>
+					<a class="next page-numbers" href="#">Next »</a>
+					</nav>
+					<br/>
+					</main>
 				</div>
-				<!-- .grid -->
-				
-				<nav class="pagination">
-				<span class="page-numbers current">1</span>
-				<a class="page-numbers" href="#">2</a>
-				<a class="next page-numbers" href="#">Next »</a>
-				</nav>
-				<br/>
-				
-				</main>
+		</div>
 				<!-- #main -->
+<!--layout right-->
+			<div class="layout-right" style="background-color: greenyellow; width: 10%;">
+				<button style="color: blue;"> UPLOAD</button>
+				<button> MYPAGE</button>
+			</div>	
+
 			</div>
 			<!-- #primary -->
 		</div>
